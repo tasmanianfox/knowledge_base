@@ -59,7 +59,8 @@ drwxrwxr-x  3 myuser mygroup 4.0K Jul  4 22:16 languages
 Add a directory name to the end. It could be either relative or absolute path.
 
 ```
-ls -lah languages 
+$ ls -lah languages 
+
 total 16K
 drwxrwxr-x 3 myuser mygroup 4.0K Jul  4 22:16 .
 drwxrwxr-x 6 myuser mygroup 4.0K Jul 10 21:19 ..
