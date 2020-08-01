@@ -59,3 +59,37 @@ test
 $ cat my_stderr.txt 
 date: invalid date ‘%’
 ```
+
+### Passing contents of file to stdin
+
+```bash
+$ myprogram < /path/to/file.txt
+```
+
+__Example for this repo: calculation of lines number in a file__
+
+```bash
+$ wc -l < ./README.md
+13
+```
+
+### Passing stdout of one command to another command
+
+```bash
+$ command1 | command2 | command3 | ... | commandn
+```
+
+__Example for this repo: calculation of lines number in a file__
+
+```bash
+$ cat ./README.md | wc -l
+13
+```
+
+__Example for this repo: finding files and dirs in root directory which name contains "unix"__
+
+```bash
+$ ls -lah | grep unix
+drwxrwxr-x  2 myuser mygroup 4.0K Jul 29 22:29 unix
+drwxrwxr-x  3 myuser mygroup 4.0K Jul 29 21:06 unix_binutils
+```
