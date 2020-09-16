@@ -10,6 +10,22 @@ $ ls
 binutils  common  languages  LICENSE  README.md
 ```
 
+### List files with no detailed info, one file or directory per line
+
+_No need to format the output for Unix pipes. Useful for Bash scripts_
+
+
+```bash
+$ ls -1
+
+common
+languages
+LICENSE
+README.md
+unix
+unix_binutils
+```
+
 ### List files with detailed info
 
 ```
